@@ -5,3 +5,5 @@ function lidarTamanho(){
     let tamanhoInt = parseInt(slider.value);
     div.setAttribute("style", `width: ${tamanhoInt}px; height: ${tamanhoInt}px;`);
 }
+
+lidarTamanho();
