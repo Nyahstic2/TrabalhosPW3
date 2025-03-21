@@ -1,0 +1,21 @@
+:root{
+    --cor: rgb(242, 168, 255);
+}
+
+body{
+    display: flex;
+    background-color: var(--cor);
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+#resizer{
+    min-width: 100px;
+    min-height: 100px;
+    background-color: black;
+}
+
+#tamanho{
+    align-self: stretch;
+}
