@@ -1,5 +1,6 @@
 :root{
     --cor: rgb(242, 168, 255);
+    --cor-forte: rgb(101, 7, 117);
 }
 body{
     display: flex;
@@ -8,6 +9,8 @@ body{
 }
 
 .inner{
+    display: block;
+    width: 50vw;
     padding: 10px;
-    background-color: hsl(from var(--cor) 0 80 0);
+    background-color: var(--cor-forte);
 }
