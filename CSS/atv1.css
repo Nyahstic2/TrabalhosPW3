@@ -1,0 +1,13 @@
+:root{
+    --cor: rgb(242, 168, 255);
+}
+body{
+    display: flex;
+    justify-content: center;
+    background-color: var(--cor);
+}
+
+.inner{
+    padding: 10px;
+    background-color: hsl(from var(--cor) 0 80 0);
+}
