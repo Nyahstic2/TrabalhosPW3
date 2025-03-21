@@ -20,3 +20,14 @@ botAzul.addEventListener("click", () => {
     colorChanger.classList.remove("corverd");
     colorChanger.classList.add("corblu");
 });
+
+function Mudar(){
+    botVermelho.click();
+    setTimeout(() => {botVerde.click();}, 1000);
+    setTimeout(() => {botAzul.click();}, 2000);
+    setTimeout(() => {botVerde.click();}, 3000);
+    setTimeout(() => {botVermelho.click();}, 4000);
+    setTimeout(() => {Mudar();}, 5000);
+}
+
+console.log("Para poder ativar uma animação, execute a função \"Mudar();\"");
