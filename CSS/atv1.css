@@ -8,9 +8,10 @@ body{
     background-color: var(--cor);
 }
 
-.inner{
+#inner{
     display: block;
     width: 50vw;
     padding: 10px;
     background-color: var(--cor-forte);
+    color: white;
 }
