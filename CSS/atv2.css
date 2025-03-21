@@ -4,8 +4,10 @@
 
 body{
     display: flex;
-    justify-content: center;
     background-color: var(--cor);
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
 }
 
 #colorchanger{
