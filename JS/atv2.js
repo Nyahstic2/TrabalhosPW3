@@ -23,10 +23,10 @@ botAzul.addEventListener("click", () => {
 
 let i = 1;
 function Mudar(){
-    i++;
     if ((i % 3) == 0) botVermelho.click();
     if ((i % 3) == 1) botVerde.click();
     if ((i % 3) == 2) botAzul.click();
+    i++;
     setTimeout(Mudar, 1000);
 }
 
