@@ -23,12 +23,11 @@ botAzul.addEventListener("click", () => {
 
 let i = 1;
 function Mudar(){
-    let num = (Math.sin(i * Math.PI) * 10).toFixed(0);
     i++;
-    if (num <= 3) botVermelho.click();
-    if (num <= 6) botVerde.click();
-    if (num <= 9) botAzul.click();
-    setTimeout(() => {Mudar();}, 1);
+    if ((i % 3) == 0) botVermelho.click();
+    if ((i % 3) == 1) botVerde.click();
+    if ((i % 3) == 2) botAzul.click();
+    setTimeout(Mudar, 1000);
 }
 
 console.log("Para poder ativar uma animação, execute a função \"Mudar();\"");
