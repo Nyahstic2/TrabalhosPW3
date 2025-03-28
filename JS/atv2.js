@@ -23,7 +23,7 @@ botAzul.addEventListener("click", () => {
 
 let i = 1;
 function Mudar(){
-    let num = Math.floor(Math.sin(i * Math.PI) * 10);
+    let num = (Math.sin(i * Math.PI) * 10).toFixed(0);
     i++;
     if (num <= 3) botVermelho.click();
     if (num <= 6) botVerde.click();
