@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<filme>
+    <titulo tipo="br">Não! Não Olhe!</titulo>
+    <titulo tipo="us">Nope</titulo>
+
+    <diretor>Jordan Peele</diretor>
+    <ano>2022</ano>
+    <duracao>130</duracao> <!-- Em minutos -->
+    <rating entidade="imdb" rating="6.8"/>
+    <sinopse>
+        Os cuidadores de um rancho de cavalos na Califórnia encontram uma força misteriosa que afeta o comportamento humano e animal.
+    </sinopse>
+</filme>

@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<game>
+    <titulo>Elden Ring</titulo>
+
+    <desenvolvedora>FromSoftware</desenvolvedora>
+    <generos>
+        <genero>RPG</genero>
+        <genero>Ação</genero>
+    </generos>
+    <plataforma>
+        <os>PS4</os>
+        <os>PS5</os>
+        <os>XBOX ONE</os>
+        <os>XBOX Series X</os>
+        <os>XBOX Series S</os>
+        <os>PC</os>
+    </plataforma>
+    <rating entidade="Metacritic" rating="96"/>
+</game>
