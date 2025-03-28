@@ -3,6 +3,7 @@ const div = document.querySelector("#resizer");
 
 function lidarTamanho(){
     let tamanhoInt = parseInt(slider.value);
+    if (tamanhoInt >= 1000) return;
     div.setAttribute("style", `width: ${tamanhoInt}px; height: ${tamanhoInt}px;`);
 }
 
