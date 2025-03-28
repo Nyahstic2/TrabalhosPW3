@@ -21,13 +21,14 @@ botAzul.addEventListener("click", () => {
     colorChanger.classList.add("corblu");
 });
 
+let i = 1;
 function Mudar(){
-    botVermelho.click();
-    setTimeout(() => {botVerde.click();}, 1000);
-    setTimeout(() => {botAzul.click();}, 2000);
-    setTimeout(() => {botVerde.click();}, 3000);
-    setTimeout(() => {botVermelho.click();}, 4000);
-    setTimeout(() => {Mudar();}, 5000);
+    let num = Math.floor(Math.sin(i * Math.PI) * 10);
+    i++;
+    if (num <= 3) botVermelho.click();
+    if (num <= 6) botVerde.click();
+    if (num <= 9) botAzul.click();
+    setTimeout(() => {Mudar();}, 1);
 }
 
 console.log("Para poder ativar uma animação, execute a função \"Mudar();\"");
