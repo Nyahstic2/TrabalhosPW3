@@ -2,7 +2,6 @@ export class Task{
     constructor(name, description, level){
         this.Done = false;
         this.MarkedToDelete = false;
-        this.ID = Date.now();
 
         this.SetName(name);
         this.SetDescription(description);
@@ -46,6 +45,10 @@ export class Task{
 
         div.classList.add("todo");
         if (this.Done) div.classList.add("taskdone");
+        if (this.Level.toUpperCase() == "BAIXO" || this.Level.toUpperCase() == "BAIXO") div.classList.add("notimportant");
+        if (this.Level.toUpperCase() == "MÉDIO" || this.Level.toUpperCase() == "MÉDIA") div.classList.add("kindaimportant");
+        if (this.Level.toUpperCase() == "ALTO" || this.Level.toUpperCase() == "ALTA") div.classList.add("reallyimportant");
+        
 
         const buttonOptions = document.createElement("div");
         const buttonDone = document.createElement("button");
@@ -94,7 +97,7 @@ export class Task{
 
         buttonDelete.addEventListener("click", () => {
             this.MarkedToDelete = true;
-            this.OnDelete(this.ID);
+            this.OnDelete();
         });
         return div;
     }
